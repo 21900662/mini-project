@@ -25,5 +25,6 @@ int getAll_lastName(MEMBER* a[], char* n); // create array of all record pointer
 int getAll_city(MEMBER* a[], char* n); // create array of all record pointers that contain the city
 void clearFile(); // remove all records
 char* toStringSave(MEMBER* p); // get contents of a member as saveable string
+void for_debug(MEMBER* a[]);  //gets all records for debugging
 
 #endif

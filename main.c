@@ -50,6 +50,8 @@ void input_handler(int input){
     load_file();
   else if(input==9)
     save_file();
+  else if(input==123)
+    debug();
   else if(input==0){
     printf("Terminating... bye!\n"); // Quit - no operation (an empty statement with a semi-colon)
   }

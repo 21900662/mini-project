@@ -114,3 +114,10 @@ char* toStringSave(MEMBER* p){
   sprintf(str, "%s %s %06d %s", p->firstName, p->lastName, p->dob, p->city);
   return str;
 }
+void for_debug(MEMBER* a[]){
+  int i, c=0;
+  for(i=0; i<MAX_MEMBERS; i++){
+    if(members[i]!=NULL)
+      a[c]=members[i];
+  }
+}

@@ -76,3 +76,11 @@ void save_file(){
   fclose(f);
   printf("Members saved.\n\n");
 }
+void debug(){
+  MEMBER* records[MAX_MEMBERS]={0};
+  for_debug(records);
+  for(int i=0; i<MAX_MEMBERS; i++){
+    printf("%d - %p\n",i, records[i]);
+  } 
+  printf("\n");
+}

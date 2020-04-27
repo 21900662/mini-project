@@ -1,7 +1,7 @@
 #ifndef _RECORD_H_
 #define _RECORD_H_
 
-#define MAX_MEMBERS 5
+#define MAX_MEMBERS 10
 
 typedef struct {
   char lastName[20];

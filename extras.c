@@ -77,10 +77,11 @@ void save_file(){
   printf("Members saved.\n\n");
 }
 void debug(){
+  int size = count();
   MEMBER* records[MAX_MEMBERS]={0};
   for_debug(records);
-  for(int i=0; i<MAX_MEMBERS; i++){
-    printf("%d - %p\n",i, records[i]);
+  for(int i=0; i<size; i++){
+    printf("%d - %p\n",i, &records[i]);
   } 
   printf("\n");
 }

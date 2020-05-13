@@ -15,6 +15,7 @@ void create(char* n, char* ph, int b, char* c); // creates a new member
 MEMBER* searchFirstName(char* n); // finds the pointer of member according to firstName
 void updateMember(MEMBER* p, char* ph, int b, char* c); // updates a specific member's info
 void deleteMember(MEMBER* p); // deletes a member
+void deleteAll(); // deletes all members
 void getAll(MEMBER* a[]); // creates arry of all record pointers containg member info
 char* toString(MEMBER* p); // return contents as string
 char* getLastName(MEMBER* p); // get lastName

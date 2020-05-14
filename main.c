@@ -145,6 +145,14 @@ void update_record(){
 }
 
 void delete_record(){
+	char mode;
+	printf("Choose mode(A-All, else-find and delete: ");
+	getchar();
+	scanf("%c",&mode);
+	if(mode=='A'){
+		deleteAll();
+	}
+	else{
   char firstName[20];
   printf("Enter a First Name > ");
   scanf("%s", firstName);
@@ -157,4 +165,5 @@ void delete_record(){
     printf("%s does not exist\n", firstName);
   }
   printf("\n");
+	}
 }

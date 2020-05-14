@@ -1,3 +1,4 @@
+#include <string.h>
 #include "base.h"
 
 MEMBER* members[MAX_MEMBERS];
@@ -52,6 +53,22 @@ void deleteMember(MEMBER* p){
   free(p);
   members[index] = NULL;
   _count--;
+}
+void deleteAll(){
+	int index = firstAvailable();
+	char condition[20];
+	printf("\nChoose condition to remain(Name of City): ");
+	getchar();
+	scanf("%s",condition);
+	for(int i=0; i<index; i++){
+		printf("%d",strcmp(condition,members[i]->city));
+		if(strcmp(condition,members[i]->city)!=0){
+			free(members[i]);
+			members[i] = NULL;
+			_count--;
+		}
+	}
+	printf("\nDelete Complete!\n");
 }
 char* toString(MEMBER* p){
   static char str[80];
